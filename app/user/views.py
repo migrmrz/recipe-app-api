@@ -25,23 +25,3 @@ class ManageUserView(generics.RetrieveUpdateAPIView):
     def get_object(self):
         """Retrieve and return authenticated user"""
         return self.request.user
-
-# ############### migmac ###############
-# HTTP 200 OK
-# Allow: POST, OPTIONS
-# Content-Type: application/json
-# Vary: Accept
-#
-# {
-#     "token": "f8421bd5e20b4636328533346e46e1240cc39c28"
-# }
-# -------------------------------------------------------
-# ############### miglin ###############
-# HTTP 200 OK
-# Allow: POST, OPTIONS
-# Content-Type: application/json
-# Vary: Accept
-#
-# {
-#     "token": "65f9cb306e20b62f3e9bb7ff6e0fda0956685840"
-# }
